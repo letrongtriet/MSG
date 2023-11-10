@@ -7,16 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096743642AFED9C400F370B3 /* OrangeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967435D2AFED9C400F370B3 /* OrangeNode.swift */; };
+		096743652AFED9C400F370B3 /* DropNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967435E2AFED9C400F370B3 /* DropNode.swift */; };
+		096743672AFED9C400F370B3 /* CowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096743602AFED9C400F370B3 /* CowNode.swift */; };
+		096743682AFED9C400F370B3 /* AppleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096743612AFED9C400F370B3 /* AppleNode.swift */; };
+		096743692AFED9C400F370B3 /* MilkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096743622AFED9C400F370B3 /* MilkNode.swift */; };
+		0967436A2AFED9C400F370B3 /* BananaNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096743632AFED9C400F370B3 /* BananaNode.swift */; };
+		0967436D2AFEDD4800F370B3 /* BearNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967436B2AFEDD4800F370B3 /* BearNode.swift */; };
+		0967436E2AFEDD4800F370B3 /* ChickenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967436C2AFEDD4800F370B3 /* ChickenNode.swift */; };
 		355538CC2AFE3C3500E29111 /* MSGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538CB2AFE3C3500E29111 /* MSGApp.swift */; };
 		355538CE2AFE3C3500E29111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538CD2AFE3C3500E29111 /* ContentView.swift */; };
 		355538D02AFE3C3600E29111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538CF2AFE3C3600E29111 /* Assets.xcassets */; };
 		355538D32AFE3C3600E29111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538D22AFE3C3600E29111 /* Preview Assets.xcassets */; };
 		355538DA2AFE43F800E29111 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538D92AFE43F800E29111 /* ARView.swift */; };
 		575B74E62AFEA96F0089493B /* SceneKit Asset Catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */; };
-		575B74E82AFEAA3F0089493B /* TemplateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B74E72AFEAA3F0089493B /* TemplateNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0967435D2AFED9C400F370B3 /* OrangeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeNode.swift; sourceTree = "<group>"; };
+		0967435E2AFED9C400F370B3 /* DropNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropNode.swift; sourceTree = "<group>"; };
+		096743602AFED9C400F370B3 /* CowNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CowNode.swift; sourceTree = "<group>"; };
+		096743612AFED9C400F370B3 /* AppleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleNode.swift; sourceTree = "<group>"; };
+		096743622AFED9C400F370B3 /* MilkNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilkNode.swift; sourceTree = "<group>"; };
+		096743632AFED9C400F370B3 /* BananaNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BananaNode.swift; sourceTree = "<group>"; };
+		0967436B2AFEDD4800F370B3 /* BearNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearNode.swift; sourceTree = "<group>"; };
+		0967436C2AFEDD4800F370B3 /* ChickenNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickenNode.swift; sourceTree = "<group>"; };
 		355538C82AFE3C3500E29111 /* MSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355538CB2AFE3C3500E29111 /* MSGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGApp.swift; sourceTree = "<group>"; };
 		355538CD2AFE3C3500E29111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,7 +39,6 @@
 		355538D22AFE3C3600E29111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		355538D92AFE43F800E29111 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Asset Catalog.scnassets"; sourceTree = "<group>"; };
-		575B74E72AFEAA3F0089493B /* TemplateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +77,14 @@
 				355538CF2AFE3C3600E29111 /* Assets.xcassets */,
 				355538D12AFE3C3600E29111 /* Preview Content */,
 				355538D92AFE43F800E29111 /* ARView.swift */,
-				575B74E72AFEAA3F0089493B /* TemplateNode.swift */,
+				096743612AFED9C400F370B3 /* AppleNode.swift */,
+				096743632AFED9C400F370B3 /* BananaNode.swift */,
+				096743602AFED9C400F370B3 /* CowNode.swift */,
+				0967435E2AFED9C400F370B3 /* DropNode.swift */,
+				096743622AFED9C400F370B3 /* MilkNode.swift */,
+				0967435D2AFED9C400F370B3 /* OrangeNode.swift */,
+				0967436B2AFEDD4800F370B3 /* BearNode.swift */,
+				0967436C2AFEDD4800F370B3 /* ChickenNode.swift */,
 			);
 			path = MSG;
 			sourceTree = "<group>";
@@ -148,9 +169,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				355538CE2AFE3C3500E29111 /* ContentView.swift in Sources */,
+				096743642AFED9C400F370B3 /* OrangeNode.swift in Sources */,
 				355538CC2AFE3C3500E29111 /* MSGApp.swift in Sources */,
-				575B74E82AFEAA3F0089493B /* TemplateNode.swift in Sources */,
+				0967436D2AFEDD4800F370B3 /* BearNode.swift in Sources */,
+				096743652AFED9C400F370B3 /* DropNode.swift in Sources */,
+				096743692AFED9C400F370B3 /* MilkNode.swift in Sources */,
 				355538DA2AFE43F800E29111 /* ARView.swift in Sources */,
+				096743682AFED9C400F370B3 /* AppleNode.swift in Sources */,
+				096743672AFED9C400F370B3 /* CowNode.swift in Sources */,
+				0967436E2AFEDD4800F370B3 /* ChickenNode.swift in Sources */,
+				0967436A2AFED9C400F370B3 /* BananaNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

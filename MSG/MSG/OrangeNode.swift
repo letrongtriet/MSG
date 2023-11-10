@@ -8,9 +8,9 @@
 import UIKit
 import SceneKit
 
-class TemplateNode: SCNNode {
+class OrangeNode: SCNNode {
     func loadModal() {
-        guard let virtualObject = SCNScene(named: "SceneKit Asset Catalog.scnassets/template.scn") else {
+        guard let virtualObject = SCNScene(named: "SceneKit Asset Catalog.scnassets/orange.scn") else {
             return
         }
         let wrappedNode = SCNNode()
