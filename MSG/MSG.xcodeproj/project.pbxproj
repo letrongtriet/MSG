@@ -12,6 +12,8 @@
 		355538D02AFE3C3600E29111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538CF2AFE3C3600E29111 /* Assets.xcassets */; };
 		355538D32AFE3C3600E29111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538D22AFE3C3600E29111 /* Preview Assets.xcassets */; };
 		355538DA2AFE43F800E29111 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538D92AFE43F800E29111 /* ARView.swift */; };
+		575B74E62AFEA96F0089493B /* SceneKit Asset Catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */; };
+		575B74E82AFEAA3F0089493B /* TemplateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B74E72AFEAA3F0089493B /* TemplateNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		355538CF2AFE3C3600E29111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355538D22AFE3C3600E29111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		355538D92AFE43F800E29111 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Asset Catalog.scnassets"; sourceTree = "<group>"; };
+		575B74E72AFEAA3F0089493B /* TemplateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 		355538BF2AFE3C3500E29111 = {
 			isa = PBXGroup;
 			children = (
+				575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */,
 				355538CA2AFE3C3500E29111 /* MSG */,
 				355538C92AFE3C3500E29111 /* Products */,
 			);
@@ -58,6 +63,7 @@
 				355538CF2AFE3C3600E29111 /* Assets.xcassets */,
 				355538D12AFE3C3600E29111 /* Preview Content */,
 				355538D92AFE43F800E29111 /* ARView.swift */,
+				575B74E72AFEAA3F0089493B /* TemplateNode.swift */,
 			);
 			path = MSG;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				355538D32AFE3C3600E29111 /* Preview Assets.xcassets in Resources */,
+				575B74E62AFEA96F0089493B /* SceneKit Asset Catalog.scnassets in Resources */,
 				355538D02AFE3C3600E29111 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 			files = (
 				355538CE2AFE3C3500E29111 /* ContentView.swift in Sources */,
 				355538CC2AFE3C3500E29111 /* MSGApp.swift in Sources */,
+				575B74E82AFEAA3F0089493B /* TemplateNode.swift in Sources */,
 				355538DA2AFE43F800E29111 /* ARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,8 +19,24 @@ struct ARViewContainer: UIViewRepresentable {
         configuration.worldAlignment = .gravityAndHeading
 
         arView.session.run(configuration)
+        
+        /*
+        let chick = ChickNode()
+        chick.loadModal()
+        chick.position = SCNVector3(
+            x: randomPosition(upperBound: 1.5, lowerBound: -1.5),
+            y: randomPosition(upperBound: 1.5, lowerBound: -1.5),
+            z: -1
+        )
 
+        arView.scene.rootNode.addChildNode(chick)
+        */
+        
         return arView
+    }
+    
+    func randomPosition(upperBound: Float, lowerBound: Float) -> Float {
+        Float(arc4random()) / Float(UInt32.max) * (lowerBound - upperBound) + upperBound
     }
 
     func updateUIView(_ uiView: ARSCNView, context: Context) {}
