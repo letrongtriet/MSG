@@ -14,6 +14,7 @@ struct ChooseYourCharacterView: View {
     let characterThree = SCNScene(named: "SceneKit Asset Catalog.scnassets/bear.scn")
     
     @State var shouldShowNameInput: Bool = false
+    @State private var name = ""
     
     var body: some View {
         GeometryReader { geo in
@@ -39,7 +40,7 @@ struct ChooseYourCharacterView: View {
                     
                     ForEach([characterOne, characterTwo, characterThree], id: \.self) { char in
                         Button {
-                            
+                            shouldShowNameInput = true
                         } label: {
                             HStack(spacing: 0) {
                                 Spacer()
@@ -77,13 +78,22 @@ struct ChooseYourCharacterView: View {
                 }
             }// scrollview
             .onAppear {
-                characterThree?.rootNode.rotate(
-                    by: SCNVector4(x: 0.0, y: 1, z: 0, w: 0),
-                    aroundTarget: SCNVector3()
-                )
+                characterThree?.rootNode.eulerAngles = .init(x: 0, y: Float.pi / 2, z: 0)
+            }
+            .alert(
+                "What will you name your pet?",
+                isPresented: $shouldShowNameInput
+            ) {
+                TextField("Enter your pet name here", text: $name)
+                Button("Done", action: submit)
+                    .disabled(name.isEmpty == true)
             }
         }// geometry
     }// body
+    
+    func submit() {
+        print("You entered \(name)")
+    }
 }
 
 #Preview {

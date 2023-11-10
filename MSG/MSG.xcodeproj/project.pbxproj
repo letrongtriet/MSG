@@ -18,7 +18,6 @@
 		355538CC2AFE3C3500E29111 /* MSGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538CB2AFE3C3500E29111 /* MSGApp.swift */; };
 		355538CE2AFE3C3500E29111 /* SquatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538CD2AFE3C3500E29111 /* SquatView.swift */; };
 		355538D02AFE3C3600E29111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538CF2AFE3C3600E29111 /* Assets.xcassets */; };
-		355538D32AFE3C3600E29111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355538D22AFE3C3600E29111 /* Preview Assets.xcassets */; };
 		355538DA2AFE43F800E29111 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355538D92AFE43F800E29111 /* ARView.swift */; };
 		573AD3C22AFEB4B500FA3D5C /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573AD3C12AFEB4B500FA3D5C /* ChallengeListView.swift */; };
 		573AD3C42AFEB79300FA3D5C /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573AD3C32AFEB79300FA3D5C /* ShopView.swift */; };
@@ -27,6 +26,8 @@
 		573AD3CA2AFEB9D700FA3D5C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573AD3C92AFEB9D700FA3D5C /* CharacterView.swift */; };
 		573AD3D02AFEBF5500FA3D5C /* ChooseYourCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573AD3CF2AFEBF5500FA3D5C /* ChooseYourCharacterView.swift */; };
 		575B74E62AFEA96F0089493B /* SceneKit Asset Catalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */; };
+		57E0C5E62AFEE6F6000A6CFC /* EducationDialogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C5E52AFEE6F6000A6CFC /* EducationDialogItem.swift */; };
+		57E0C5E82AFEE873000A6CFC /* EducationalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E0C5E72AFEE873000A6CFC /* EducationalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,6 @@
 		355538CB2AFE3C3500E29111 /* MSGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGApp.swift; sourceTree = "<group>"; };
 		355538CD2AFE3C3500E29111 /* SquatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatView.swift; sourceTree = "<group>"; };
 		355538CF2AFE3C3600E29111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		355538D22AFE3C3600E29111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		355538D92AFE43F800E29111 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		573AD3C12AFEB4B500FA3D5C /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
 		573AD3C32AFEB79300FA3D5C /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		573AD3C92AFEB9D700FA3D5C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		573AD3CF2AFEBF5500FA3D5C /* ChooseYourCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseYourCharacterView.swift; sourceTree = "<group>"; };
 		575B74E52AFEA96F0089493B /* SceneKit Asset Catalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "SceneKit Asset Catalog.scnassets"; sourceTree = "<group>"; };
+		57E0C5E52AFEE6F6000A6CFC /* EducationDialogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationDialogItem.swift; sourceTree = "<group>"; };
+		57E0C5E72AFEE873000A6CFC /* EducationalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,22 +100,15 @@
 				0967436B2AFEDD4800F370B3 /* BearNode.swift */,
 				0967436C2AFEDD4800F370B3 /* ChickenNode.swift */,
 				573AD3C12AFEB4B500FA3D5C /* ChallengeListView.swift */,
-				355538D12AFE3C3600E29111 /* Preview Content */,
 				573AD3C32AFEB79300FA3D5C /* ShopView.swift */,
 				573AD3C52AFEB96200FA3D5C /* HomeView.swift */,
 				573AD3C72AFEB99200FA3D5C /* MainView.swift */,
 				573AD3C92AFEB9D700FA3D5C /* CharacterView.swift */,
 				573AD3CF2AFEBF5500FA3D5C /* ChooseYourCharacterView.swift */,
+				57E0C5E52AFEE6F6000A6CFC /* EducationDialogItem.swift */,
+				57E0C5E72AFEE873000A6CFC /* EducationalView.swift */,
 			);
 			path = MSG;
-			sourceTree = "<group>";
-		};
-		355538D12AFE3C3600E29111 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				355538D22AFE3C3600E29111 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		573AD3C02AFEB35100FA3D5C /* Services */ = {
@@ -181,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355538D32AFE3C3600E29111 /* Preview Assets.xcassets in Resources */,
 				575B74E62AFEA96F0089493B /* SceneKit Asset Catalog.scnassets in Resources */,
 				355538D02AFE3C3600E29111 /* Assets.xcassets in Resources */,
 			);
@@ -207,8 +201,10 @@
 				096743692AFED9C400F370B3 /* MilkNode.swift in Sources */,
 				573AD3CA2AFEB9D700FA3D5C /* CharacterView.swift in Sources */,
 				355538DA2AFE43F800E29111 /* ARView.swift in Sources */,
+				57E0C5E62AFEE6F6000A6CFC /* EducationDialogItem.swift in Sources */,
 				096743682AFED9C400F370B3 /* AppleNode.swift in Sources */,
 				096743672AFED9C400F370B3 /* CowNode.swift in Sources */,
+				57E0C5E82AFEE873000A6CFC /* EducationalView.swift in Sources */,
 				0967436E2AFEDD4800F370B3 /* ChickenNode.swift in Sources */,
 				0967436A2AFED9C400F370B3 /* BananaNode.swift in Sources */,
 			);
@@ -343,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MSG/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = E82Z46N6KL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -373,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MSG/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = E82Z46N6KL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
