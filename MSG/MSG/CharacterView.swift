@@ -122,6 +122,7 @@ struct CharacterView: View {
             
             Spacer()
         }
+        .background(.white)
     }
 }
 
