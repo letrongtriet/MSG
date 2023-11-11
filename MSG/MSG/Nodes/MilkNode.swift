@@ -15,6 +15,7 @@ class MilkNode: SCNNode {
         }
         let wrappedNode = SCNNode()
         for child in virtualObject.rootNode.childNodes {
+            child.eulerAngles = .init(x: 0, y: 0, z: Float.pi / 2)
             wrappedNode.addChildNode(child)
         }
         addChildNode(wrappedNode)

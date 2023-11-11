@@ -8,55 +8,34 @@
 import SwiftUI
 
 struct EducationalView: View {
-    @Environment(\.dismiss) var dismiss
-    
     let item: EducationDialogItem
     
     var body: some View {
         ZStack {
-            Color(.white.withAlphaComponent(0.15))
+            Color(.white.withAlphaComponent(0.3))
                 .ignoresSafeArea(.all)
             
-            Text(item.fact)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .overlay {
-                    LinearGradient(
-                        colors: [
-                            .pink.opacity(0.7),
-                            .purple,
-                            .yellow
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+            VStack {
+                Text(item.fact)
+                    .font(.system(size: 22, weight: .bold))
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.white)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        .pink.opacity(0.7),
+                                        .purple,
+                                        .yellow
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
                     )
-                    .mask(
-                        Text(item.fact)
-                            .font(.headline)
-                            .multilineTextAlignment(.center)
-                    )
-                }
-                .padding()
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(
-                            LinearGradient(
-                                colors: [
-                                    .pink.opacity(0.7),
-                                    .purple,
-                                    .yellow
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 4
-                        )
-                )
-                .padding([.vertical, .horizontal])
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                dismiss()
+                    .padding([.vertical, .horizontal])
             }
         }
     }

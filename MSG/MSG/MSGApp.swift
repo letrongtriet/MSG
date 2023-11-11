@@ -9,9 +9,25 @@ import SwiftUI
 
 @main
 struct MSGApp: App {
+    @AppStorage("onboarded") var onboarded: Bool = false
+    @State var isLoading: Bool = true
+
     var body: some Scene {
         WindowGroup {
-            MainView()
+            if isLoading {
+                LoadingView()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            isLoading = false
+                        }
+                    }
+            } else {
+                if onboarded {
+                    MainView()
+                } else {
+                    CallingView()
+                }
+            }
         }
     }
 }

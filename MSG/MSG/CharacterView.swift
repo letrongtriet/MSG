@@ -9,7 +9,7 @@ import SwiftUI
 import SceneKit
 
 struct CharacterView: View {
-    let scene = SCNScene(named: "SceneKit Asset Catalog.scnassets/pig.scn")
+    let scene = SCNScene(named: "SceneKit Asset Catalog.scnassets/chicken.scn")
     
     @State var mpValue: CGFloat = 0
     @State var hpValue: CGFloat = 0
@@ -20,26 +20,11 @@ struct CharacterView: View {
             Text("I'm getting stronger! \n Thanks to you, I'm one step closer to becoming the leader Dreamland needs.")
                 .font(.system(size: 22, weight: .bold))
                 .multilineTextAlignment(.center)
-                .overlay {
-                    LinearGradient(
-                        colors: [
-                            .pink.opacity(0.7),
-                            .purple,
-                            .yellow
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                    .mask(
-                        Text("I'm getting stronger! \n Thanks to you, I'm one step closer to becoming the leader Dreamland needs.")
-                            .font(.system(size: 22, weight: .bold))
-                            .multilineTextAlignment(.center)
-                    )
-                }
+                .foregroundStyle(.white)
                 .padding()
-                .overlay(
+                .background(
                     RoundedRectangle(cornerRadius: 16)
-                        .stroke(
+                        .fill(
                             LinearGradient(
                                 colors: [
                                     .pink.opacity(0.7),
@@ -48,22 +33,30 @@ struct CharacterView: View {
                                 ],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
-                            ),
-                            lineWidth: 4
+                            )
                         )
                 )
                 .padding([.vertical, .horizontal])
             
             SceneView(
-                scene: scene,
+                scene: {
+                    let scene = SCNScene(named: "SceneKit Asset Catalog.scnassets/chicken.scn")!
+                    scene.background.contents = UIColor.clear
+                    return scene
+                }(),
                 options: [
                     .allowsCameraControl,
                     .autoenablesDefaultLighting,
                     .temporalAntialiasingEnabled
                 ]
             )
+            .background(.clear)
             .frame(width: 200, height: 240)
-            
+
+            Text("Momo")
+                .font(.system(size: 25, weight: .bold))
+                .foregroundStyle(.mint.gradient)
+
             VStack {
                 HStack {
                     Text("HP")
