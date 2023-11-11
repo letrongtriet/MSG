@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SquatView.swift
 //  MSG
 //
 //  Created by Triet Le on 10.11.2023.
@@ -10,7 +10,7 @@ import SceneKit
 import ARKit
 import CoreMotion
 
-struct ContentView: View {
+struct SquatView: View {
     var scene = SCNScene()
     let motionManager = CMMotionManager()
 
@@ -21,7 +21,7 @@ struct ContentView: View {
         }
         .ignoresSafeArea(.all)
         .onAppear {
-            motionManager.deviceMotionUpdateInterval = 0.025
+            motionManager.deviceMotionUpdateInterval = 5/60
             motionManager.startDeviceMotionUpdates(to: .main) { data, error in
                 if let error {
                     print("Error: \(error.localizedDescription)")
@@ -33,11 +33,11 @@ struct ContentView: View {
 
                 let gravY = abs(myData.gravity.y)
                 let userY = myData.userAcceleration.y
-
+                
                 if gravY > 0.9 {
-                    if userY < -1 {
+                    if userY < -1.4 {
                         print("Squat: \(userY)")
-                    } else if userY > 1 {
+                    } else if userY > 1.12 {
                         print("Jump: \(userY)")
                     }
                 }
@@ -47,5 +47,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SquatView()
 }
