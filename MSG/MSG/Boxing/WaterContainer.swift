@@ -17,14 +17,6 @@ struct WaterContainer: UIViewRepresentable {
         let configuration = ARWorldTrackingConfiguration()
         configuration.worldAlignment = .camera
         arView.session.run(configuration)
-        let milk = DropNode()
-        milk.loadModal()
-        milk.position = SCNVector3(
-            x: 0,
-            y: 0,
-            z: -8
-        )
-        arView.scene.rootNode.addChildNode(milk)
         return arView
     }
 

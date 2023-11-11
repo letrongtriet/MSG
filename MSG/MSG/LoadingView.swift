@@ -35,8 +35,7 @@ struct LoadingView: View {
             .padding()
         }
         .background(
-            Image("homeBackground")
-                .resizable()
+            Color.black
                 .ignoresSafeArea(.all)
         )
     }

@@ -62,7 +62,7 @@ struct JumpView: View {
                         if shouldRepeatToEarn {
                             EducationalView(item: .repeatChallenge)
                                 .onAppear {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 7.5) {
                                         showFact = true
                                     }
                                 }
